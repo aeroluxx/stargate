@@ -7,7 +7,7 @@ export default class App extends Component<Props> {
     return (
       <View style={{flex: 1}}>
         <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-        <View style={{flex: 3, backgroundColor: 'skyblue'}} />
+        <View style={{flex: 45, backgroundColor: 'skyblue'}} />
         <View style={{flex: 3, backgroundColor: 'steelblue'}} />
       </View>
     );
