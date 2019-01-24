@@ -1,30 +1,17 @@
-import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {Component} from 'react'
+import {StyleSheet, Text, View} from 'react-native'
+import { Button } from './src/components'
 
 
-export default class App extends Component<Props> {
+export default class App extends Component {
+  _onPress = () => {
+    console.log('click')
+  }
   render() {
     return (
-      <View style={{flex: 1}}>
-        <View style={{flex: 1, backgroundColor: 'powderblue'}} />
-        <View style={{flex: 45, backgroundColor: 'skyblue'}} />
-        <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+      <View style={{ flex: 1, justifyContent: 'center' }}>
+          <Button title={'click'} onPress={this._onPress}/>
       </View>
-    );
+    )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'blue',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: 'white',
-  },
-});
