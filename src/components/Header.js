@@ -1,11 +1,11 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const Header = () => {
+const Header = ({title}) => {
   const { headerStyle, h1 } = styles
     return (
         <View style={headerStyle}>
-          <Text style={h1}>STARGATE</Text>
+          <Text style={h1}>{title}</Text>
         </View>
     )
 }

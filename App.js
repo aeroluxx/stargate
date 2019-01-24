@@ -4,10 +4,15 @@ import { Header } from './src/components'
 
 
 export default class App extends Component {
+
+  state={
+    title: 'STARGATE'
+  }
+
   render() {
     return (
       <View>
-          <Header />
+          <Header title={this.state.title}/>
       </View>
     )
   }
