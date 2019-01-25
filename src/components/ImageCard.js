@@ -2,14 +2,15 @@ import React from 'react'
 import { View, Text, Image, StyleSheet } from 'react-native'
 import { w } from './Constants'
 
-const ImageCard = () => {
+const ImageCard = ({ data }) => {
   const { cover, h1, container, shadow } = styles
+  const { image, name } = data
     return (
       <View style={container}>
         <View style={shadow}>
-          <Image style={cover} source={{ uri: 'https://github.com/react-native-village/react-native-init/raw/master/stargate/images/Stargate.jpg' }}/>
+          <Image style={cover} source={{ uri: image }}/>
         </View>
-        <Text style={h1}>IMAGECARD</Text>
+        <Text style={h1}>{name}</Text>
       </View>
     )
 }
@@ -17,7 +18,7 @@ const ImageCard = () => {
 const styles = StyleSheet.create({
   container: {
     //alignItems: 'center',
-    width: w/1.85
+    width: w/2
   },
   shadow: {
     shadowColor: 'grey',
@@ -28,8 +29,8 @@ const styles = StyleSheet.create({
   },
   cover: {
     marginTop: 30,
-    marginLeft: 25,
-    marginRight: 25,
+    marginLeft: 15,
+    marginRight: 15,
     width: w/2.4,
     height: w*0.63,
     borderRadius: 4,

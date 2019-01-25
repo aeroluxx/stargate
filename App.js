@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {StyleSheet, Text, View} from 'react-native'
+import {StyleSheet, Text, View, ScrollView} from 'react-native'
 import { Header, ImageCard } from './src/components'
 import { w, h } from './src/components/Constants'
 
@@ -24,11 +24,30 @@ export default class App extends Component {
   }
 
   render() {
+    const {title, data} = this.state
+    const {screenStyle} = styles
     return (
-      <View>
-          <Header title={this.state.title}/>
-          <ImageCard />
-      </View>
+        <View>
+          <ScrollView>
+            <Header title={this.state.title}/>
+              <View style={screenStyle}>
+                {data.map( item => (
+                  <ImageCard data={item} key = {item.id} />
+                ))}
+              </View>
+            </ScrollView>
+        </View>
     )
   }
 }
+
+const styles=StyleSheet.create({
+  screenStyle: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    flexShrink: 2,
+    justifyContent: 'space-around',
+    marginBottom: 100
+    }
+  }
+)
