@@ -1,12 +1,13 @@
-import React, {Component} from 'react'
-import {View} from 'react-native'
+import React, { Component } from 'react'
+import { View } from 'react-native'
 import { Header, ImageCard, Layout } from '../../src/components'
 import { w, h } from '../../src/components/Constants'
 
-const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
+const url =
+  'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
 
 export default class App extends Component {
-  state={
+  state = {
     title: 'STARGATE',
     data: []
   }
@@ -22,7 +23,7 @@ export default class App extends Component {
   }
 
   render() {
-    const {data} = this.state
+    const { data } = this.state
     return (
       <View>
         <Header title={this.state.title} />
