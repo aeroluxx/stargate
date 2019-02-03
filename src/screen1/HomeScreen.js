@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {View} from 'react-native'
-import { Header, ImageCard, Layout } from './src/components'
-import { w, h } from './src/components/Constants'
+import { Header, ImageCard, Layout } from '../../src/components'
+import { w, h } from '../../src/components/Constants'
 
 const url = 'https://raw.githubusercontent.com/react-native-village/react-native-init/master/stargate/stargate.json'
 

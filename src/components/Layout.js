@@ -18,7 +18,8 @@ const styles=StyleSheet.create({
     flexWrap: 'wrap',
     flexShrink: 2,
     justifyContent: 'space-around',
-    marginBottom: 150
+    marginBottom: 150,
+    backgroundColor: '#C9DCF2'
     }
   }
 )

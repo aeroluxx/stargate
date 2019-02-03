@@ -12,8 +12,10 @@
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "eslint": "^5.13.0",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.51.1",
+    "prettier": "1.16.4",
     "react-test-renderer": "16.6.3"
   },
   "jest": {
