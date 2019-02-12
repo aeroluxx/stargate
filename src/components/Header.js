@@ -1,13 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   const { headerStyle, h1 } = styles
-    return (
-        <View style={headerStyle}>
-          <Text style={h1}>{title}</Text>
-        </View>
-    )
+  return (
+    <View style={headerStyle}>
+      <Text style={h1}>{title}</Text>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     height: 116,
     shadowColor: '#2B50D4',
     shadowRadius: 8,
-    shadowOffset: { width: 5, height: 5},
+    shadowOffset: { width: 5, height: 5 },
     shadowOpacity: 0.4,
     elevation: 2
   },

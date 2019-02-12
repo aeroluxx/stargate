@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import { Header, ImageCard, Layout, Button } from '../../src/components'
+import { Header, ImageCard, Layout } from '../../src/components'
 import { w, h } from '../../src/components/Constants'
 
 const url =
@@ -27,10 +27,6 @@ export default class App extends Component {
     return (
       <View>
         <Header title={this.state.title} />
-        <Button
-          title="Navigate"
-          onPress={() => this.props.navigation.navigate('Detail')}
-        />
         <Layout>
           {data.map(item => (
             <ImageCard data={item} key={item.id} />

@@ -3,13 +3,13 @@ import { TouchableOpacity, View, Text, StyleSheet } from 'react-native'
 
 const Button = ({ title, onPress }) => {
   const { container, h1 } = styles
-    return (
-      <TouchableOpacity onPress={onPress}>
-        <View style={container}>
-          <Text style={h1}>{title}</Text>
-        </View>
-      </TouchableOpacity>
-    )
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <View style={container}>
+        <Text style={h1}>{title}</Text>
+      </View>
+    </TouchableOpacity>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     shadowColor: '#2B50D4',
     shadowRadius: 8,
-    shadowOffset: { width: 5, height: 5},
+    shadowOffset: { width: 5, height: 5 },
     shadowOpacity: 0.4,
     elevation: 2
   },

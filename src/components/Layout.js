@@ -1,18 +1,16 @@
-import React, {Component} from 'react'
-import {StyleSheet, Text, View, ScrollView} from 'react-native'
+import React, { Component } from 'react'
+import { StyleSheet, Text, View, ScrollView } from 'react-native'
 
 const Layout = props => {
   const { screenStyle } = styles
   return (
-  <ScrollView>
-    <View style={screenStyle}>
-      {props.children}
-    </View>
-  </ScrollView>
+    <ScrollView>
+      <View style={screenStyle}>{props.children}</View>
+    </ScrollView>
   )
 }
 
-const styles=StyleSheet.create({
+const styles = StyleSheet.create({
   screenStyle: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -20,8 +18,7 @@ const styles=StyleSheet.create({
     justifyContent: 'space-around',
     marginBottom: 150,
     backgroundColor: '#C9DCF2'
-    }
   }
-)
+})
 
-export {Layout}
+export { Layout }
